@@ -1,0 +1,189 @@
+list(APPEND _LIBUI_SOURCES
+    3rd/scintilla/src/AutoComplete.cxx
+    3rd/scintilla/src/CallTip.cxx
+    3rd/scintilla/src/CaseConvert.cxx
+    3rd/scintilla/src/CaseFolder.cxx
+    3rd/scintilla/src/CellBuffer.cxx
+    3rd/scintilla/src/CharClassify.cxx
+    3rd/scintilla/src/ContractionState.cxx
+    3rd/scintilla/src/Decoration.cxx
+    3rd/scintilla/src/Document.cxx
+    3rd/scintilla/src/EditModel.cxx
+    3rd/scintilla/src/Editor.cxx
+    3rd/scintilla/src/EditView.cxx
+    3rd/scintilla/src/KeyMap.cxx
+    3rd/scintilla/src/Indicator.cxx
+    3rd/scintilla/src/LineMarker.cxx
+    3rd/scintilla/src/MarginView.cxx
+    3rd/scintilla/src/PerLine.cxx
+    3rd/scintilla/src/PositionCache.cxx
+    3rd/scintilla/src/RESearch.cxx
+    3rd/scintilla/src/RunStyles.cxx
+    3rd/scintilla/src/Selection.cxx
+    3rd/scintilla/src/Style.cxx
+    3rd/scintilla/src/UniConversion.cxx
+    3rd/scintilla/src/ViewStyle.cxx
+    3rd/scintilla/src/XPM.cxx
+    3rd/scintilla/src/Catalogue.cxx
+    3rd/scintilla/src/ExternalLexer.cxx
+    3rd/scintilla/src/ScintillaBase.cxx
+    3rd/scintilla/lexlib/StyleContext.cxx
+    3rd/scintilla/lexlib/WordList.cxx
+    3rd/scintilla/lexlib/Accessor.cxx
+    3rd/scintilla/lexlib/CharacterSet.cxx
+    3rd/scintilla/lexlib/CharacterCategory.cxx
+    3rd/scintilla/lexlib/PropSetSimple.cxx
+    3rd/scintilla/lexlib/LexerBase.cxx
+    3rd/scintilla/lexlib/LexerModule.cxx
+    3rd/scintilla/lexlib/LexerNoExceptions.cxx
+    3rd/scintilla/lexlib/LexerSimple.cxx
+    3rd/scintilla/lexers/LexA68k.cxx
+    3rd/scintilla/lexers/LexAPDL.cxx
+    3rd/scintilla/lexers/LexASY.cxx
+    3rd/scintilla/lexers/LexAU3.cxx
+    3rd/scintilla/lexers/LexAVE.cxx
+    3rd/scintilla/lexers/LexAVS.cxx
+    3rd/scintilla/lexers/LexAbaqus.cxx
+    3rd/scintilla/lexers/LexAda.cxx
+    3rd/scintilla/lexers/LexAsm.cxx
+    3rd/scintilla/lexers/LexAsn1.cxx
+    3rd/scintilla/lexers/LexBaan.cxx
+    3rd/scintilla/lexers/LexBash.cxx
+    3rd/scintilla/lexers/LexBasic.cxx
+    3rd/scintilla/lexers/LexBatch.cxx
+    3rd/scintilla/lexers/LexBibTeX.cxx
+    3rd/scintilla/lexers/LexBullant.cxx
+    3rd/scintilla/lexers/LexCLW.cxx
+    3rd/scintilla/lexers/LexCOBOL.cxx
+    3rd/scintilla/lexers/LexCPP.cxx
+    3rd/scintilla/lexers/LexCSS.cxx
+    3rd/scintilla/lexers/LexCaml.cxx
+    3rd/scintilla/lexers/LexCmake.cxx
+    3rd/scintilla/lexers/LexCoffeeScript.cxx
+    3rd/scintilla/lexers/LexConf.cxx
+    3rd/scintilla/lexers/LexCrontab.cxx
+    3rd/scintilla/lexers/LexCsound.cxx
+    3rd/scintilla/lexers/LexD.cxx
+    3rd/scintilla/lexers/LexDMAP.cxx
+    3rd/scintilla/lexers/LexDMIS.cxx
+    3rd/scintilla/lexers/LexDiff.cxx
+    3rd/scintilla/lexers/LexECL.cxx
+    3rd/scintilla/lexers/LexEDIFACT.cxx
+    3rd/scintilla/lexers/LexEScript.cxx
+    3rd/scintilla/lexers/LexEiffel.cxx
+    3rd/scintilla/lexers/LexErlang.cxx
+    3rd/scintilla/lexers/LexErrorList.cxx
+    3rd/scintilla/lexers/LexFlagship.cxx
+    3rd/scintilla/lexers/LexForth.cxx
+    3rd/scintilla/lexers/LexFortran.cxx
+    3rd/scintilla/lexers/LexGAP.cxx
+    3rd/scintilla/lexers/LexGui4Cli.cxx
+    3rd/scintilla/lexers/LexHTML.cxx
+    3rd/scintilla/lexers/LexHaskell.cxx
+    3rd/scintilla/lexers/LexHex.cxx
+    3rd/scintilla/lexers/LexInno.cxx
+    3rd/scintilla/lexers/LexJSON.cxx
+    3rd/scintilla/lexers/LexKVIrc.cxx
+    3rd/scintilla/lexers/LexKix.cxx
+    3rd/scintilla/lexers/LexLaTeX.cxx
+    3rd/scintilla/lexers/LexLisp.cxx
+    3rd/scintilla/lexers/LexLout.cxx
+    3rd/scintilla/lexers/LexLua.cxx
+    3rd/scintilla/lexers/LexMMIXAL.cxx
+    3rd/scintilla/lexers/LexMPT.cxx
+    3rd/scintilla/lexers/LexMSSQL.cxx
+    3rd/scintilla/lexers/LexMagik.cxx
+    3rd/scintilla/lexers/LexMake.cxx
+    3rd/scintilla/lexers/LexMarkdown.cxx
+    3rd/scintilla/lexers/LexMatlab.cxx
+    3rd/scintilla/lexers/LexMetapost.cxx
+    3rd/scintilla/lexers/LexModula.cxx
+    3rd/scintilla/lexers/LexMySQL.cxx
+    3rd/scintilla/lexers/LexNimrod.cxx
+    3rd/scintilla/lexers/LexNsis.cxx
+    3rd/scintilla/lexers/LexNull.cxx
+    3rd/scintilla/lexers/LexOScript.cxx
+    3rd/scintilla/lexers/LexOpal.cxx
+    3rd/scintilla/lexers/LexPB.cxx
+    3rd/scintilla/lexers/LexPLM.cxx
+    3rd/scintilla/lexers/LexPO.cxx
+    3rd/scintilla/lexers/LexPOV.cxx
+    3rd/scintilla/lexers/LexPS.cxx
+    3rd/scintilla/lexers/LexPascal.cxx
+    3rd/scintilla/lexers/LexPerl.cxx
+    3rd/scintilla/lexers/LexPowerPro.cxx
+    3rd/scintilla/lexers/LexPowerShell.cxx
+    3rd/scintilla/lexers/LexProgress.cxx
+    3rd/scintilla/lexers/LexProps.cxx
+    3rd/scintilla/lexers/LexPython.cxx
+    3rd/scintilla/lexers/LexR.cxx
+    3rd/scintilla/lexers/LexRebol.cxx
+    3rd/scintilla/lexers/LexRegistry.cxx
+    3rd/scintilla/lexers/LexRuby.cxx
+    3rd/scintilla/lexers/LexRust.cxx
+    3rd/scintilla/lexers/LexSML.cxx
+    3rd/scintilla/lexers/LexSQL.cxx
+    3rd/scintilla/lexers/LexSTTXT.cxx
+    3rd/scintilla/lexers/LexScriptol.cxx
+    3rd/scintilla/lexers/LexSmalltalk.cxx
+    3rd/scintilla/lexers/LexSorcus.cxx
+    3rd/scintilla/lexers/LexSpecman.cxx
+    3rd/scintilla/lexers/LexSpice.cxx
+    3rd/scintilla/lexers/LexTACL.cxx
+    3rd/scintilla/lexers/LexTADS3.cxx
+    3rd/scintilla/lexers/LexTAL.cxx
+    3rd/scintilla/lexers/LexTCL.cxx
+    3rd/scintilla/lexers/LexTCMD.cxx
+    3rd/scintilla/lexers/LexTeX.cxx
+    3rd/scintilla/lexers/LexTxt2tags.cxx
+    3rd/scintilla/lexers/LexVB.cxx
+    3rd/scintilla/lexers/LexVHDL.cxx
+    3rd/scintilla/lexers/LexVerilog.cxx
+    3rd/scintilla/lexers/LexVisualProlog.cxx
+    3rd/scintilla/lexers/LexYAML.cxx
+)
+
+if(APPLE)
+    list(APPEND _LIBUI_INCLUDEDIRS
+        3rd/scintilla/cocoa
+    )
+    list(APPEND _LIBUI_SOURCES
+        3rd/scintilla/cocoa/InfoBar.mm
+        3rd/scintilla/cocoa/PlatCocoa.mm
+        3rd/scintilla/cocoa/ScintillaCocoa.mm
+        3rd/scintilla/cocoa/ScintillaView.mm
+    )
+elseif(WIN32)
+    list(APPEND _LIBUI_INCLUDEDIRS
+        3rd/scintilla/win32
+    )
+    list(APPEND _LIBUI_SOURCES
+        3rd/scintilla/win32/ScintillaWin.cxx
+        3rd/scintilla/win32/PlatWin.cxx
+        3rd/scintilla/win32/ScintillaWin.cxx
+        3rd/scintilla/win32/Scintilla.def
+        3rd/scintilla/win32/ScintRes.rc
+        3rd/scintilla/win32/HanjaDic.cxx
+    )
+    list(APPEND _LIBUI_LIBS
+        imm32
+    )
+    set(_LIBUI_LIBS ${_LIBUI_LIBS} PARENT_SCOPE)
+endif()
+
+list(APPEND _LIBUI_DEFS
+    SCI_NAMESPACE
+    SCI_LEXER
+    NO_CXX11_REGEX
+    STATIC_BUILD
+)
+
+list(APPEND _LIBUI_INCLUDEDIRS
+        3rd/scintilla/include
+        3rd/scintilla/src
+        3rd/scintilla/lexlib
+        )
+
+set(_LIBUI_DEFS ${_LIBUI_DEFS} PARENT_SCOPE)
+set(_LIBUI_SOURCES ${_LIBUI_SOURCES} PARENT_SCOPE)
+set(_LIBUI_INCLUDEDIRS ${_LIBUI_INCLUDEDIRS} PARENT_SCOPE)

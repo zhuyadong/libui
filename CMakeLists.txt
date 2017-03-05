@@ -2,6 +2,7 @@
 # see https://cmake.org/gitweb?p=cmake.git;a=commit;h=95cdf132489c79e88a10fdf7a7566fa002c7680b (thanks ngladitz in irc.freenode.net/#cmake)
 cmake_minimum_required(VERSION 3.1.0 FATAL_ERROR)
 
+set(CMAKE_VERBOSE_MAKEFILE ON)
 # TODOs
 # - silence entering/leaving messages?
 # - uname -s for more refined OS control
@@ -132,10 +133,11 @@ endmacro()
 
 add_subdirectory("common")
 add_subdirectory("${_OSNAME}")
+add_subdirectory("3rd")
 add_library(${_LIBUINAME} ${_LIBUI_SOURCES})
 target_include_directories(${_LIBUINAME}
 	PUBLIC .
-	PRIVATE ${_LIBUI_INCLUEDIRS})
+	PRIVATE ${_LIBUI_INCLUDEDIRS})
 target_compile_definitions(${_LIBUINAME}
 	PRIVATE ${_LIBUI_DEFS})
 # cmake produces this for us by default but only for shared libraries

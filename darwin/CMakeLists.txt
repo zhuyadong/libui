@@ -75,5 +75,5 @@ macro(_handle_static)
 endmacro()
 
 set(_LIBUI_LIBS
-	objc "-framework Foundation" "-framework AppKit"
+	objc "-framework Foundation" "-framework AppKit" "-framework QuartzCore"
 PARENT_SCOPE)
